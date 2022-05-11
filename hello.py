@@ -1,14 +1,16 @@
-# Start virtual environment: venv\Scripts\activate
+# Start virtual environment: .venv\Scripts\activate
 
-# pip install numpy
-import numpy as np
-
+# pylint: disable=C0103
 variable = 'World'
-variable = input("Enter your name: ")
+# variable = input("Enter your name: ")
 print('Hello\n' + variable)
 
+def my_strings():
+    """ A function that outputs to the console
 
-def my_function():
-  print('variable is a ', type(variable))
-  f"variable is a {type(variable)}"
-my_function()
+    The description can be over many lines.
+    """
+    message = f"variable is a {type(variable)}"
+    print(message)
+
+my_strings()
